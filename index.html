@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp</title>
+
     <style>
-        body {
+        /* RESET TOTAL */
+        * {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #FFFFFF; /* BRANCO ABSOLUTO */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .container {
@@ -21,41 +31,41 @@
         }
 
         .imagem-topo {
-            max-width: 150px; /* ajuste o tamanho se quiser */
-            margin-bottom: 20px;
+            width: 280px;      /* TAMANHO MAIOR */
+            max-width: 90vw;   /* Responsivo no celular */
+            margin-bottom: 30px;
         }
-        
+
         .botao-central {
             background-color: #25D366;
             color: #FFFFFF;
-            padding: 20px 40px;
-            font-size: 18px;
+            padding: 22px 45px;
+            font-size: 20px;
             font-weight: bold;
-            border: none;
             border-radius: 8px;
-            cursor: pointer;
             text-decoration: none;
             display: inline-block;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
-        
+
         .botao-central:hover {
             background-color: #1EBE5D;
             transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
-        
+
         .botao-central:active {
             transform: translateY(0);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <!-- IMAGEM -->
+        <!-- IMAGEM GRANDE -->
         <img src="sua-imagem.jpg" alt="Imagem acima do botão" class="imagem-topo">
 
         <!-- BOTÃO -->
