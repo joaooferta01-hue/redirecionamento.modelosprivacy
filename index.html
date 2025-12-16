@@ -50,6 +50,16 @@
             width: fit-content;
         }
 
+        .botao:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
         /* WHATSAPP */
         .whatsapp {
             background-color: #25D366;
@@ -68,14 +78,13 @@
             background-color: #0077B5;
         }
 
-        .botao:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        /* VIP */
+        .vip {
+            background-color: #E53935; /* VERMELHO */
         }
 
-        .botao:active {
-            transform: translateY(0);
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        .vip:hover {
+            background-color: #C62828;
         }
     </style>
 </head>
@@ -86,14 +95,19 @@
         <!-- IMAGEM -->
         <img src="sua-imagem.jpg" alt="Imagem acima do botão" class="imagem-topo">
 
-        <!-- BOTÃO WHATSAPP -->
+        <!-- WHATSAPP -->
         <a href="https://wa.me/message/D6A3OJQWMTRMA1" class="botao whatsapp">
-            WHATSAPP
+            ME CHAME AQUI
         </a>
 
-        <!-- BOTÃO TELEGRAM -->
-        <a href="https://t.me/+5514991741467" class="botao telegram">
+        <!-- TELEGRAM -->
+        <a href="https://t.me/seu_usuario_telegram" class="botao telegram">
             TELEGRAM
+        </a>
+
+        <!-- ADQUIRIR VIP -->
+        <a href="https://seguro.modelosprivacy.club/api/public/shopify?product=1677967779398&store=16779" class="botao vip">
+            ADQUIRIR VIP
         </a>
     </div>
 
