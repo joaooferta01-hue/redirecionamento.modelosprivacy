@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whatsapp</title>
+    <title>Contato</title>
 
     <style>
         /* RESET TOTAL */
@@ -16,7 +16,7 @@
         html, body {
             width: 100%;
             height: 100%;
-            background-color: #FFFFFF; /* BRANCO ABSOLUTO */
+            background-color: #FFFFFF;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -31,31 +31,49 @@
         }
 
         .imagem-topo {
-            width: 280px;      /* TAMANHO MAIOR */
-            max-width: 90vw;   /* Responsivo no celular */
+            width: 280px;
+            max-width: 90vw;
             margin-bottom: 30px;
         }
 
-        .botao-central {
-            background-color: #25D366;
+        .botao {
             color: #FFFFFF;
             padding: 22px 45px;
             font-size: 20px;
             font-weight: bold;
             border-radius: 8px;
             text-decoration: none;
-            display: inline-block;
+            display: block;
+            margin: 15px auto;
             transition: all 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            width: fit-content;
         }
 
-        .botao-central:hover {
+        /* WHATSAPP */
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .whatsapp:hover {
             background-color: #1EBE5D;
+        }
+
+        /* TELEGRAM */
+        .telegram {
+            background-color: #0088CC;
+        }
+
+        .telegram:hover {
+            background-color: #0077B5;
+        }
+
+        .botao:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .botao-central:active {
+        .botao:active {
             transform: translateY(0);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
         }
@@ -65,12 +83,17 @@
 <body>
 
     <div class="container">
-        <!-- IMAGEM GRANDE -->
+        <!-- IMAGEM -->
         <img src="sua-imagem.jpg" alt="Imagem acima do botão" class="imagem-topo">
 
-        <!-- BOTÃO -->
-        <a href="https://wa.me/message/D6A3OJQWMTRMA1" class="botao-central">
+        <!-- BOTÃO WHATSAPP -->
+        <a href="https://wa.me/message/D6A3OJQWMTRMA1" class="botao whatsapp">
             ME CHAME AQUI
+        </a>
+
+        <!-- BOTÃO TELEGRAM -->
+        <a href="https://t.me/+5514991741467" class="botao telegram">
+            TELEGRAM
         </a>
     </div>
 
