@@ -29,7 +29,7 @@
             padding: 20px;
         }
 
-        /* ÁREA DO VÍDEO COM CONTROLES NATIVOS */
+        /* ÁREA DO VÍDEO COM THUMBNAIL */
         .video-wrapper {
             width: 90%;
             max-width: 800px;
@@ -37,14 +37,13 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(255,255,255,.15);
+            position: relative;
         }
 
         .video-wrapper video {
             width: 100%;
             height: auto;
             display: block;
-            /* controles visíveis para play/pause, volume, etc */
-            controls: true;
         }
 
         /* CONTAINER DOS BOTÕES */
@@ -97,14 +96,14 @@
 
 <body>
 
-    <!-- VÍDEO COM CONTROLES NATIVOS -->
+    <!-- VÍDEO COM THUMBNAIL (POSTER) -->
     <div class="video-wrapper">
         <!--
           - controls: mostra a barra de controles nativa do navegador
           - preload="metadata": carrega só o necessário para exibir duração
-          - poster="capa.jpg"(opcional): imagem de capa antes de dar play
+          - poster="sua-thumbnail.jpg": imagem de capa ANTES de clicar (substitua pelo nome da sua imagem)
         -->
-        <video controls preload="metadata">
+        <video controls preload="metadata" poster="thumb.jpg">
             <source src="yasmin.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
