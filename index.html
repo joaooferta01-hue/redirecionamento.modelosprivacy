@@ -16,9 +16,9 @@
         html, body {
             width: 100%;
             min-height: 100%;
-            background-color: #000000;        /* fundo preto */
+            background-color: #000000;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #FFFFFF;                     /* texto branco para contraste */
+            color: #FFFFFF;
         }
 
         body {
@@ -29,10 +29,10 @@
             padding: 20px;
         }
 
-        /* ÁREA DO VÍDEO */
+        /* ÁREA DO VÍDEO COM CONTROLES NATIVOS */
         .video-wrapper {
-            width: 90%;               /* largura menor que a tela */
-            max-width: 800px;         /* limite máximo */
+            width: 90%;
+            max-width: 800px;
             margin: 20px auto;
             border-radius: 12px;
             overflow: hidden;
@@ -43,6 +43,8 @@
             width: 100%;
             height: auto;
             display: block;
+            /* controles visíveis para play/pause, volume, etc */
+            controls: true;
         }
 
         /* CONTAINER DOS BOTÕES */
@@ -95,14 +97,19 @@
 
 <body>
 
-    <!-- VÍDEO -->
+    <!-- VÍDEO COM CONTROLES NATIVOS -->
     <div class="video-wrapper">
-        <!-- Substitua "seu-video.mp4" pelo caminho do seu vídeo -->
-        <video autoplay muted loop playsinline>
+        <!--
+          - controls: mostra a barra de controles nativa do navegador
+          - preload="metadata": carrega só o necessário para exibir duração
+          - poster="capa.jpg"(opcional): imagem de capa antes de dar play
+        -->
+        <video controls preload="metadata">
             <source src="yasmin.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
     </div>
+
         <a href="https://yasminmiahiraprivacy.vercel.app/" class="botao vip">CONTEÚDO +18</a>
     </div>
 
