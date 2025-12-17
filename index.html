@@ -15,19 +15,40 @@
 
         html, body {
             width: 100%;
-            height: 100%;
-            background-color: #FFFFFF;
+            min-height: 100%;
+            background-color: #000000;        /* fundo preto */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFFFFF;                     /* texto branco para contraste */
         }
 
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
 
+        /* ÁREA DO VÍDEO */
+        .video-wrapper {
+            width: 90%;               /* largura menor que a tela */
+            max-width: 800px;         /* limite máximo */
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255,255,255,.15);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* CONTAINER DOS BOTÕES */
         .container {
             text-align: center;
+            margin-top: 30px;
         }
 
         .imagem-topo {
@@ -60,64 +81,36 @@
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
         }
 
-        /* WHATSAPP */
-        .whatsapp {
-            background-color: #25D366;
-        }
+        /* CORES DOS BOTÕES */
+        .whatsapp { background-color: #25D366; }
+        .whatsapp:hover { background-color: #1EBE5D; }
 
-        .whatsapp:hover {
-            background-color: #1EBE5D;
-        }
+        .telegram { background-color: #0088CC; }
+        .telegram:hover { background-color: #0077B5; }
 
-        /* TELEGRAM */
-        .telegram {
-            background-color: #0088CC;
-        }
-
-        .telegram:hover {
-            background-color: #0077B5;
-        }
-
-        /* VIP */
-        .vip {
-            background-color: #E53935;
-        }
-
-        .vip:hover {
-            background-color: #C62828;
-        }
-
-        /* PRÉVIAS */
-        .previas {
-            background-color: #000000;
-        }
-
-        .previas:hover {
-            background-color: #222222;
-        }
+        .vip { background-color: #E53935; }
+        .vip:hover { background-color: #C62828; }
     </style>
 </head>
 
 <body>
 
+    <!-- VÍDEO -->
+    <div class="video-wrapper">
+        <!-- Substitua "seu-video.mp4" pelo caminho do seu vídeo -->
+        <video autoplay muted loop playsinline>
+            <source src="seu-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+
+    <!-- BOTÕES -->
     <div class="container">
-        <!-- IMAGEM -->
         <img src="sua-imagem.JPEG" alt="Imagem acima do botão" class="imagem-topo">
 
-<a href="https://wa.me/message/D6A3OJQWMTRMA1" class="botao whatsapp">
-            WHATSAPP
-        </a>
-
-        
-    <!-- TELEGRAM -->
-        <a href="https://t.me/yasminmiahira" class="botao telegram">
-            TELEGRAM
-        </a>
-
-        <!-- ADQUIRIR VIP -->
-        <a href="https://yasminmiahiraprivacy.vercel.app/" class="botao vip">
-            CONTEÚDO +18
-        </a>
+        <a href="https://wa.me/message/D6A3OJQWMTRMA1" class="botao whatsapp">WHATSAPP</a>
+        <a href="https://t.me/yasminmiahira" class="botao telegram">TELEGRAM</a>
+        <a href="https://yasminmiahiraprivacy.vercel.app/" class="botao vip">CONTEÚDO +18</a>
     </div>
 
 </body>
