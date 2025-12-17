@@ -8,21 +8,16 @@
         *{margin:0;padding:0;box-sizing:border-box}
         html,body{width:100%;min-height:100%;background:#000;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#fff}
         body{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
-        .video-wrapper{width:90%;max-width:800px;margin:20px auto;border-radius:12px;overflow:hidden;box-shadow:0 0 20px rgba(255,255,255,.15);position:relative}
+        .video-wrapper{width:90%;max-width:800px;margin:20px auto;border-radius:12px;overflow:hidden;box-shadow:0 0 20px rgba(255,255,255,.15)}
         .video-wrapper video{width:100%;height:auto;display:block}
-        .container{text-align:center;margin-top:30px}
-        .botao{color:#fff;padding:22px 45px;font-size:20px;font-weight:bold;border-radius:8px;text-decoration:none;display:block;margin:15px auto;transition:all .3s ease;box-shadow:0 4px 8px rgba(0,0,0,.15);width:fit-content}
-        .botao:hover{transform:translateY(-2px);box-shadow:0 6px 12px rgba(0,0,0,.2)}
-        .vip{background:#E53935}
-        .vip:hover{background:#C62828}
-        /* NOVO: cabeçalho tipo perfil */
         .perfil{display:flex;align-items:center;padding:12px 16px;background:#111;border-bottom:1px solid #222}
         .avatar{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #E53935;margin-right:10px}
         .nome{font-size:14px;font-weight:600}
+        .botao{color:#fff;padding:22px 45px;font-size:20px;font-weight:bold;border-radius:8px;text-decoration:none;display:block;margin:8px auto 0;transition:all .3s ease;box-shadow:0 4px 8px rgba(0,0,0,.15);width:fit-content;background:#E53935}
+        .botao:hover{background:#C62828;transform:translateY(-2px);box-shadow:0 6px 12px rgba(0,0,0,.2)}
     </style>
 </head>
 <body>
-    <!-- VÍDEO COM THUMBNAIL (POSTER) -->
     <div class="video-wrapper">
         <div class="perfil">
             <img src="perfil.jpg" alt="Yasmin" class="avatar">
@@ -32,11 +27,7 @@
             <source src="yasmin.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
         </video>
+        <a href="https://yasminmiahiraprivacy.vercel.app/" class="botao">CONTEÚDO +18</a>
     </div>
-
-    <div class="container">
-        <a href="https://yasminmiahiraprivacy.vercel.app/" class="botao vip">CONTEÚDO +18</a>
-    </div>
-
 </body>
 </html>
